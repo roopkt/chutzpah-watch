@@ -1,6 +1,6 @@
 {
   "name": "chutzpah-watch",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Run chutzpah test cases in watch mode",
   "bin": {
     "scci-chutzpah": "dist/index.js"
@@ -11,7 +11,7 @@
     "build:release": "npm run build & copy readme.md dist\\ & copy package.json dist\\",
     "localpublish": "npm run build & cd dist & npm link",
     "lint": "tslint -t stylish --project \"tsconfig.json\"",
-    "ci": "npm run build:release"
+    "ci": "npm run build:release && npm publish"
   },
   "author": "Rupesh Tiwari",
   "license": "ISC",
@@ -28,5 +28,19 @@
     "node-watch": "0.5.8",
     "rimraf": "^2.6.2",
     "yargs": "^11.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roopkt/chutzpah-watch.git"
+  },
+  "keywords": [
+    "chutzpah",
+    "watch",
+    "continous",
+    "testing",
+    "cli"
+  ],
+  "engine": {
+    "node": ">=7"
   }
 }
