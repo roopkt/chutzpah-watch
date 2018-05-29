@@ -3,13 +3,13 @@ import * as yargs from 'yargs';
 import { readFileSync } from 'fs';
 import { run } from './watch-testfiles';
 
-yargs
-    .config('chutzpah', configPath => JSON.parse(readFileSync(configPath, 'utf-8')))
+const y = yargs
+    .config('config', (configPath: string) => JSON.parse(readFileSync(configPath, 'utf-8')))
     .command({
         command: 'watch',
-        handler: (argv) => {
-            // console.log(argv.test)
+        handler: (argv: any) => {
             run(argv);
-        }
+        },
     })
-    .argv
+    .argv;
+

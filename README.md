@@ -24,7 +24,7 @@ JSON file with all of the parameters required to configure runing testing in wat
 ## Command to trigger test in Watch mode ##
 After adding `chutzpah-watch.json` file in your directory, runbelow script.
 ```
-scci-chutzpah watch --chutzpah chutzpah-watch.json
+chutzpah watch --config chutzpah-watch.json
 ```
 Once you run the below script it will show below message:
 
