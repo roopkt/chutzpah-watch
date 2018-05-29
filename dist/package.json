@@ -1,9 +1,9 @@
 {
   "name": "chutzpah-watch",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Run chutzpah test cases in watch mode",
   "bin": {
-    "scci-chutzpah": "dist/index.js"
+    "chutzpah": "dist/index.js"
   },
   "scripts": {
     "prebuild": "rimraf coverage dist tmp",

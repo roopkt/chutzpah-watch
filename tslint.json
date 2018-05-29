@@ -13,7 +13,7 @@
         ],
         "no-implicit-dependencies": false,
         "ordered-imports": false,
-        "noUnusedLocals": true,
+        "noUnusedLocals": false,
         "no-submodule-imports": false,
         "no-any": false,
         "no-console": false,
