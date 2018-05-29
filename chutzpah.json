@@ -1,0 +1,13 @@
+{
+    "watchConfig": {
+        "recursive": true,
+        "filter": "/\\.tests.ts$/"
+    },
+    "exePath": "C:/temp/Chutzpah.4.3.3/tools",
+    "dirsToSkip": [
+        "node_modules",
+        "node_scripts",
+        "interface",
+        "lib"
+    ]
+}
