@@ -11,7 +11,7 @@
     "build:release": "npm run build & copy readme.md dist\\ & copy package.json dist\\",
     "localpublish": "npm run build & cd dist & npm link",
     "lint": "tslint -t stylish --project \"tsconfig.json\"",
-    "ci": "npm run build:release"
+    "ci": "npm run build:release && npm publish"
   },
   "author": "Rupesh Tiwari",
   "license": "ISC",
