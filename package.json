@@ -28,5 +28,19 @@
     "node-watch": "0.5.8",
     "rimraf": "^2.6.2",
     "yargs": "^11.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roopkt/chutzpah-watch.git"
+  },
+  "keywords": [
+    "chutzpah",
+    "watch",
+    "continous",
+    "testing",
+    "cli"
+  ],
+  "engine": {
+    "node": ">=7"
   }
 }

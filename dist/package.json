@@ -1,7 +1,7 @@
 {
-  "name": "@scci-branding/chutzpah-watch",
+  "name": "chutzpah-watch",
   "version": "1.0.0",
-  "description": "",
+  "description": "Run chutzpah test cases in watch mode",
   "bin": {
     "scci-chutzpah": "dist/index.js"
   },
@@ -10,7 +10,8 @@
     "build": "tsc -p tsconfig.release.json",
     "build:release": "npm run build & copy readme.md dist\\ & copy package.json dist\\",
     "localpublish": "npm run build & cd dist & npm link",
-    "lint": "tslint -t stylish --project \"tsconfig.json\""
+    "lint": "tslint -t stylish --project \"tsconfig.json\"",
+    "ci": "npm run build:release"
   },
   "author": "Rupesh Tiwari",
   "license": "ISC",
