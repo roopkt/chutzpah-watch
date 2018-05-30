@@ -1,4 +1,10 @@
-[![NPM version][npm-image]][npm-url]
+![npm](https://img.shields.io/badge/npm-1.0-blue.svg)
+
+![build](https://img.shields.io/badge/build-passing-green.svg)
+
+![node](https://img.shields.io/badge/node-%3E%3D8-blue.svg)
+
+![license](https://img.shields.io/badge/license-ISC-green.svg)
 
 <p style='color:green'>
 <i> chutzpah-watch está mirando tus archivos...
