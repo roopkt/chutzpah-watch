@@ -1,15 +1,15 @@
 {
   "name": "chutzpah-watch",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "Run chutzpah test cases in watch mode",
   "bin": {
-    "chutzpah": "dist/index.js"
+    "chutzpah": "index.js"
   },
   "scripts": {
     "prebuild": "rimraf coverage dist tmp",
     "build": "tsc -p tsconfig.release.json",
     "build:release": "npm run build & copy readme.md dist\\ & copy package.json dist\\",
-    "localpublish": "npm run build & cd dist & npm link",
+    "localpublish": "npm run build && cd dist && npm link",
     "lint": "tslint -t stylish --project \"tsconfig.json\"",
     "npmpublish": "npm run build:release && cd dist && npm publish"
   },
