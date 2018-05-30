@@ -33,6 +33,9 @@ Create [Chutzpah-Watch.json](#Chutzpah-Watch.json) file in your code base then r
 ```sh
  # Execute a script as: 
  chutzpah watch --config chutzpah-watch.json
+
+ # OR run script with aliases:
+chutzpah w -c chutzpah-watch.json
 ```
 Once you run script, it will show below message:
 

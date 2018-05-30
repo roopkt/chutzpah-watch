@@ -4,6 +4,7 @@ import { readFileSync } from 'fs';
 import { run } from './watch-testfiles';
 
 const y = yargs
+  .usage('Usage: chutzpah <command> [options]')
   .option(
     'config',
     {
@@ -18,11 +19,12 @@ const y = yargs
     'config',
     (configPath: string) => JSON.parse(readFileSync(configPath, 'utf-8')))
   .command({
-    command: 'chutzpah <watch>',
+    command: 'watch',
     describe: 'run tests in watch mode',
     handler: (argv: any) => {
       run(argv);
     },
+    aliases: ['w'],
   })
   .example('chutzpah watch --config chuzpah-wath.json', 'running chutzpah-watch and reading cli options from given config file')
   .help()
