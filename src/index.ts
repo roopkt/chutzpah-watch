@@ -12,4 +12,3 @@ const y = yargs
         },
     })
     .argv;
-

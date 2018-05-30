@@ -1,75 +1,75 @@
-const path = require('path');
-const watch = require('node-watch');
+import * as path from 'path';
+import * as watch from 'node-watch';
 import { readdirSync, statSync } from 'fs';
 import * as chalkModule from 'chalk';
 const chalk = chalkModule.default;
 import { exec } from 'child_process';
 
-let config: ChutzpahConfig = {} as ChutzpahConfig;
+let config: ChutzpahConfig;
 const js = process.cwd();
-// const dirsToSkip = ['node_modules', 'node_scripts', 'interface', 'lib'];
 const dirsToWatch = [];
-const watchConfig = {
-    recursive: true,
-    filter: /\.tests.ts$/
-};
-const chutzpahParams = ['nologo'];
 
 export interface ChutzpahConfig {
     watchConfig: {
-        recursive: boolean,
-        filter: string
-    },
-    exePath: string,
-    dirsToSkip: string[]
+        recursive: boolean;
+        filter: any;
+    };
+    exePath: string;
+    dirsToSkip: string[];
+    cliOptions: any;
 }
 
 export function run(args: ChutzpahConfig) {
     config = args;
-    console.log(config.watchConfig);
-    getDirectoriesToWatch();
+    console.log(config);
+    getDirectoriesToWatch(js);
     startWatchingTests();
-    InformMyJob();
+    informMyJob();
 }
 
-function onlyDirectory(file) {
+function onlyDirectory(file: string) {
     return statSync(file).isDirectory()
-        && config.dirsToSkip.indexOf(file) < 0
+        && config.dirsToSkip.indexOf(file) < 0;
 }
 
-function insertFileToWatchList(file) {
+function insertFileToWatchList(file: string) {
     dirsToWatch.push(file);
 }
 
-function onTestFileChange(_evt, name) {
+function onTestFileChange(evt: any, name: string) {
     const chutzpahExe = `${config.exePath}/chutzpah.console.exe`;
     const file = path.resolve(js, name);
-    const params = ' /path ' + file + chutzpahParams.map(s => ' /' + s).join('')
-    var script = chutzpahExe + params;
+    const params = ` /path  ${file} ${config.cliOptions.map((s: string) => ` /${s}`).join('')}`;
+    const script = chutzpahExe + params;
     log(script);
-    exec(script, function (_err, data) {
+    exec(script, (err: any, data: any) => {
         log(chalk.bgGreen(data.toString()));
     });
 }
 
-function InformMyJob() {
+function informMyJob() {
     writeColor('Watching all of the tests.ts files under below directories:\n', dirsToWatch);
 }
 
-function writeColor(msg, obj) {
+function writeColor(msg: any, obj: any) {
     log(chalk.bgGreen.bold(msg), obj || '');
 }
 
-function log(msg, obj?) {
+function log(msg: any, obj?: any) {
     console.log(msg, obj || '');
 }
 
-function getDirectoriesToWatch() {
-    readdirSync(js).
+function getDirectoriesToWatch(workingDir: string) {
+    readdirSync(workingDir).
         filter(onlyDirectory).
         forEach(insertFileToWatchList);
 }
 
 function startWatchingTests() {
-    watch(dirsToWatch, watchConfig, onTestFileChange);
+    const settings = {
+        ...config.watchConfig,
+        filter: (f: string) => new RegExp(config.watchConfig.filter).test(f),
+    };
+    console.log('settings', settings);
+    watch(dirsToWatch, settings, onTestFileChange);
 }

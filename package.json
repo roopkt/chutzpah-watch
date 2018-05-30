@@ -1,6 +1,6 @@
 {
-  "name": "chutzpah-watch",
-  "version": "1.0.5",
+  "name": "chutzpah",
+  "version": "1.0.7",
   "description": "Run chutzpah test cases in watch mode",
   "bin": {
     "chutzpah": "dist/index.js"
@@ -11,10 +11,8 @@
     "build:release": "npm run build & copy readme.md dist\\ & copy package.json dist\\",
     "localpublish": "npm run build & cd dist & npm link",
     "lint": "tslint -t stylish --project \"tsconfig.json\"",
-    "ci": "npm run build:release && npm publish"
+    "publish": "npm run build:release && npm publish"
   },
-  "author": "Rupesh Tiwari",
-  "license": "ISC",
   "devDependencies": {
     "@types/node": "^10.1.2",
     "@types/yargs": "^11.0.0",
@@ -29,9 +27,15 @@
     "rimraf": "^2.6.2",
     "yargs": "^11.0.0"
   },
+  "author": "Rupesh Tiwari (https://github.com/roopkt)",
+  "license": "ISC",
+  "homepage": "https://github.com/roopkt/chutzpah-watch/blob/master/README.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/roopkt/chutzpah-watch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roopkt/chutzpah-watch/issues"
   },
   "keywords": [
     "chutzpah",
