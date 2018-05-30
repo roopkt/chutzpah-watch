@@ -1,8 +1,20 @@
-# Welcome to Chutzpah-Watch #
-[![NPM version][npm-image]][npm-url]
-[![NPM downloads][downloads-image]][downloads-url]
+<h1 align="center"> Chutzpah-Watch </h1>
+<p align="center">
+  <b >Chutzpah-Watch está mirando tus archivos</b>
+</p>
+<br>
 
-`chutzpah-watch` cli will run tests cases in watch mode. Whenever there is change in file it will run tests against it. 
+[![Build Status][travis-image]][travis-url]
+[![Coverage Status][coveralls-image]][coveralls-url]
+[![NPM version][npm-image]][npm-url]
+[![Windows Tests][windows-image]][windows-url]
+[![js-standard-style][standard-image]][standard-url]
+[![Conventional Commits][conventional-commits-image]][conventional-commits-url]
+[![Slack][slack-image]][slack-url]
+
+# Welcome to Chutzpah-Watch #
+
+`chutzpah` cli will run tests cases in watch mode. Whenever there is change in file it will run tests against it. 
 
 ## Installation
 
