@@ -1,41 +1,33 @@
-<h1 align="center"> Chutzpah-Watch </h1>
-<p align="center">
-  <b >Chutzpah-Watch está mirando tus archivos</b>
-</p>
-<br>
-
-[![Build Status][travis-image]][travis-url]
-[![Coverage Status][coveralls-image]][coveralls-url]
 [![NPM version][npm-image]][npm-url]
-[![Windows Tests][windows-image]][windows-url]
-[![js-standard-style][standard-image]][standard-url]
-[![Conventional Commits][conventional-commits-image]][conventional-commits-url]
-[![Slack][slack-image]][slack-url]
 
-# Welcome to Chutzpah-Watch #
+<p>
+<i> chutzpah-watch está mirando tus archivos...</i>
+</p>
+# Welcome to Chutzpah-Watch 
 
-`chutzpah` cli will run tests cases in watch mode. Whenever there is change in file it will run tests against it. 
+`chutzpah` cli will run tests cases in watch mode. Whenever there is change in file, it will run the same test file.
 
 ## Installation
 
 ```sh
+#Run below script to install globally
 npm install chutzpah-watch -g
 ```
 
 ## Features
 
-* Execute Typescript tests in watch mode
+* Executes Typescript tests in watch mode
 * Supports all of the flags given in [Chutzpah Command Line Options](https://github.com/mmanela/chutzpah/wiki/command-line-options)
 * Configurable and easy option to pass configs [Chutzpah-Watch.json](#Chutzpah-Watch.json)
 
 ## Usage
-Create  [Chutzpah-Watch.json](#Chutzpah-Watch.json) file in your code base and then run below script. 
+Create [Chutzpah-Watch.json](#Chutzpah-Watch.json) file in your code base then run below script. 
 ```sh
  # Execute a script as: 
  chutzpah watch --config chutzpah-watch.json
 ```
 Once you run script, it will show below message:
-
+<img width="400" src="/screen-running.png">
 `Watching all of the tests.ts files under below directories: ['dir1','dir2'...]`
 Now if you change any test file and save, it will run the test automatically and display the result. 
 

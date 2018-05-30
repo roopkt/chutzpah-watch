@@ -1,6 +1,6 @@
 {
   "name": "chutzpah-watch",
-  "version": "1.0.10",
+  "version": "1.0.12",
   "description": "Run chutzpah test cases in watch mode",
   "bin": {
     "chutzpah": "dist/index.js"
