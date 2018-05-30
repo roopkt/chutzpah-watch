@@ -1,8 +1,9 @@
-[![NPM version][npm-image]][npm-url]
+![NPM Version](https://www.npmjs.com/package/chutzpah-watch)
 
 <p>
 <i> chutzpah-watch está mirando tus archivos...</i>
 </p>
+
 # Welcome to Chutzpah-Watch 
 
 `chutzpah` cli will run tests cases in watch mode. Whenever there is change in file, it will run the same test file.
@@ -27,9 +28,14 @@ Create [Chutzpah-Watch.json](#Chutzpah-Watch.json) file in your code base then r
  chutzpah watch --config chutzpah-watch.json
 ```
 Once you run script, it will show below message:
-<img width="400" src="/screen-running.png">
-`Watching all of the tests.ts files under below directories: ['dir1','dir2'...]`
+
+`Watching test cases in below listed directories: ['dir1','dir2'...]`
+
 Now if you change any test file and save, it will run the test automatically and display the result. 
+
+<p>
+<img src="/screen-running.png">
+</p>
 
 ## Chutzpah-Watch.json ##
 JSON file with all of the parameters required to configure runing test in watch mode. Below is one sample for `chutzpha-watch.json` file. Supported CLI options can be found from [Chutzpah Command Line Option](https://github.com/mmanela/chutzpah/wiki/command-line-options) 
