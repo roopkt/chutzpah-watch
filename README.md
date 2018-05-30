@@ -1,4 +1,4 @@
-![npm](https://img.shields.io/badge/npm-1.0-blue.svg)
+![npm](https://img.shields.io/badge/npm-v1.0-blue.svg)
 
 ![build](https://img.shields.io/badge/build-passing-green.svg)
 
