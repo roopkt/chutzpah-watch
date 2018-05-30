@@ -11,7 +11,7 @@
     "build:release": "npm run build & copy readme.md dist\\ & copy package.json dist\\",
     "localpublish": "npm run build & cd dist & npm link",
     "lint": "tslint -t stylish --project \"tsconfig.json\"",
-    "publish": "npm run build:release && npm publish"
+    "npmpublish": "npm run build:release && npm publish"
   },
   "devDependencies": {
     "@types/node": "^10.1.2",

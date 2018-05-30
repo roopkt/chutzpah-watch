@@ -1,6 +1,7 @@
 # Welcome to Chutzpah-Watch #
 [![NPM version][npm-image]][npm-url]
 [![NPM downloads][downloads-image]][downloads-url]
+
 `chutzpah-watch` cli will run tests cases in watch mode. Whenever there is change in file it will run tests against it. 
 
 ## Installation
