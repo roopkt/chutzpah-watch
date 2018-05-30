@@ -1,7 +1,7 @@
 ![NPM Version](https://www.npmjs.com/package/chutzpah-watch)
 
 <p>
-<i> chutzpah-watch está mirando tus archivos...</i>
+<i style="color:green"> chutzpah-watch está mirando tus archivos...</i>
 </p>
 
 # Welcome to Chutzpah-Watch 
