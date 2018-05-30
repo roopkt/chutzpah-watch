@@ -1,5 +1,5 @@
 {
-  "name": "chutzpah",
+  "name": "chutzpah-watch",
   "version": "1.0.7",
   "description": "Run chutzpah test cases in watch mode",
   "bin": {
