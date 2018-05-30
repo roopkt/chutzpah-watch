@@ -1,6 +1,6 @@
 {
   "name": "chutzpah-watch",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "Run chutzpah test cases in watch mode",
   "bin": {
     "chutzpah": "dist/index.js"
@@ -11,7 +11,7 @@
     "build:release": "npm run build & copy readme.md dist\\ & copy package.json dist\\",
     "localpublish": "npm run build & cd dist & npm link",
     "lint": "tslint -t stylish --project \"tsconfig.json\"",
-    "npmpublish": "npm run build:release && npm publish"
+    "npmpublish": "npm run build:release && cd dist && npm publish"
   },
   "devDependencies": {
     "@types/node": "^10.1.2",
