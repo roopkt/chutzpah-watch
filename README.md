@@ -1,10 +1,10 @@
-![npm](https://img.shields.io/badge/npm-v1.0-blue.svg)
+<img src='https://img.shields.io/badge/npm-v1.0-blue.svg' alt='npm-v1.0'/>
 
-![build](https://img.shields.io/badge/build-passing-green.svg)
+<img src='https://img.shields.io/badge/build-passing-green.svg' alt='build-passing'/>
 
-![node](https://img.shields.io/badge/node-%3E%3D8-blue.svg)
+<img src='https://img.shields.io/badge/node-%3E%3D8-blue.svg' alt='node-v8' />
 
-![license](https://img.shields.io/badge/license-ISC-green.svg)
+<img alt='isc-license'  src='https://img.shields.io/badge/license-ISC-green.svg' />
 
 <p style='color:green'>
 <i> chutzpah-watch está mirando tus archivos...
