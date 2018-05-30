@@ -1,6 +1,6 @@
 {
   "name": "chutzpah-watch",
-  "version": "1.0.14",
+  "version": "1.0.16",
   "description": "Run chutzpah test cases in watch mode",
   "bin": {
     "chutzpah": "dist/index.js"
@@ -40,9 +40,10 @@
   "keywords": [
     "chutzpah",
     "watch",
-    "continous",
+    "continuous",
     "testing",
-    "cli"
+    "cli",
+    "chutzpah-console"
   ],
   "engine": {
     "node": ">=7"
