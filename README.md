@@ -13,7 +13,7 @@
 
 # Welcome to Chutzpah-Watch 
 
-`chutzpah` cli will run tests cases in watch mode. Whenever there is change in file, it will run the same test file.
+[`chutzpah`](https://www.npmjs.com/package/chutzpah-watch) cli will run tests cases in watch mode. Whenever there is change in file, it will run the same test file.
 
 ## Installation
 
